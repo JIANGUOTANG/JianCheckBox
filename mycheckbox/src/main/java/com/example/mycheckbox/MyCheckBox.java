@@ -1,6 +1,4 @@
 package com.example.mycheckbox;
-
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -14,18 +12,15 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Checkable;
 import android.widget.CompoundButton;
-
 /**
  * Created by jian on 2017/4/6.
  */
 public class MyCheckBox extends View implements Checkable {
     private boolean mChecked;
     private Context mContext;
-
     public MyCheckBox(Context context) {
         this(context, null);
     }
-
     private int textSize = 16;//文字大小
     private Paint textPaint;
     private int mStrokeWidth = 5;
@@ -34,7 +29,6 @@ public class MyCheckBox extends View implements Checkable {
     public MyCheckBox(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
-
     public MyCheckBox(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mContext = context;
